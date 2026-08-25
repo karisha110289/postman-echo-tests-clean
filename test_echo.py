@@ -5,7 +5,7 @@ BASE_URL = "https://httpbin.org"
 def test_get_simple():
     """Тест 1: простой GET — просто проверяем, что сервер ответил 200"""
     response = requests.get(f"{BASE_URL}/get")
-    assert response.status_code == 999
+    assert response.status_code == 200
 
 
 def test_post_simple():
